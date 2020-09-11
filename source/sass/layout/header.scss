@@ -1,0 +1,22 @@
+.header {
+  position: relative;
+
+  min-width: 320px;
+
+  background-color: $white;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+
+  height: 40px;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__phone {
+  display: none;
+}

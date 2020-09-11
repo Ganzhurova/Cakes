@@ -1,0 +1,10 @@
+.logo {
+  display: block;
+
+  color: $text-dark;
+  @include playfair-bold;
+}
+
+.logo__dark {
+  font-size: 16px;
+}

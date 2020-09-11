@@ -1,0 +1,59 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^9.8.4",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.7",
+    "core-js": "^3.6.5",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^0.7.0",
+    "stylelint-scss": "^1.5.2",
+    "webpack": "^4.43.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "scripts": {
+    "lint": "eslint \"source/es6/**/*\" --fix",
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\"",
+    "test": "npm run editorconfig && npm run stylelint",
+    "stylelint-check": "stylelint-config-prettier-check",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "browserslist": [
+    "> 1%",
+    "not dead"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/es6/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "12.18"
+  }
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  src: url("../fonts/circe/circe.woff2") format("woff2"),
+    url("../fonts/circe/circe.woff") format("woff"),
+    url("../fonts/circe/circe.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Playfair Display";
+  font-style: normal;
+  src: local("Playfair Display Bold"), local("PlayfairDisplay-Bold"),
+    url("../fonts/playfair/Playfairdisplaybold.woff2") format("woff2"),
+    url("../fonts/playfair/Playfairdisplaybold.woff") format("woff"),
+    url("../fonts/playfair/Playfairdisplaybold.ttf") format("truetype");
+  font-display: swap;
+}
