@@ -52,14 +52,14 @@ input[type="radio"].visually-hidden {
     width: 94.7%;
     min-width: 728px;
   }
-  //
-  // @media (min-width: $desktop-width) {
-  //   width: 1170px;
-  // }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .container--small {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
     width: 88%;
     min-width: 676px;
   }

@@ -1,3 +1,9 @@
+.nav__button {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .nav__burger {
   margin: 0;
   padding: 2px;
@@ -19,6 +25,10 @@
 
   &:not(:last-child) {
     margin-bottom: 4px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 6px;
+    }
   }
 }
 
@@ -35,12 +45,27 @@
   list-style: none;
 
   background-color: $grey;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+
+    background-color: transparent;
+  }
 }
 
 .nav__item {
   overflow: hidden;
+
   &:not(:last-child) {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+    @media (min-width: $desktop-width) {
+      box-shadow: none;
+    }
   }
 }
 
@@ -58,6 +83,17 @@
   opacity: 0;
 
   transition: all 0.2s;
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 22px;
+
+    color: $text-dark;
+    font-size: 13px;
+    line-height: normal;
+
+    transform: translateY(0);
+    opacity: 1;
+  }
 
   &:hover,
   &:active,
