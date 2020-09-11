@@ -8,6 +8,15 @@
 }
 
 @font-face {
+  font-family: "Circe Bold";
+  font-style: normal;
+  src: url("../fonts/circe/circe_bold.woff2") format("woff2"),
+    url("../fonts/circe/circe_bold.woff") format("woff"),
+    url("../fonts/circe/circe_bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
   font-weight: 700;
   font-family: "Playfair Display";
   font-style: normal;

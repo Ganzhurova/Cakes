@@ -14,6 +14,7 @@ const navMenu = () => {
 
     const navInteractive = new Switch();
     navInteractive.init(params);
+    navInteractive.addClosedByClickOnBody();
   }
 
   initNav();

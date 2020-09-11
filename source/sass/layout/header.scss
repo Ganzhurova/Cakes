@@ -10,13 +10,37 @@
   display: flex;
   align-items: center;
 
-  height: 40px;
+  min-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 60px;
+  }
 }
 
 .header__logo {
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 26px;
+  }
+}
+
+.header__nav {
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }
 
 .header__phone {
   display: none;
+
+  color: $text-dark;
+
+  font-size: 15px;
+
+  @include circe-bold;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

@@ -48,12 +48,19 @@ input[type="radio"].visually-hidden {
   min-width: 280px;
   margin: 0 auto;
 
-  // @media (min-width: $tablet-width) {
-  //   width: 88%;
-  //   min-width: 678px;
-  // }
+  @media (min-width: $tablet-width) {
+    width: 94.7%;
+    min-width: 728px;
+  }
   //
   // @media (min-width: $desktop-width) {
   //   width: 1170px;
   // }
+}
+
+.container--small {
+  @media (min-width: $tablet-width) {
+    width: 88%;
+    min-width: 676px;
+  }
 }

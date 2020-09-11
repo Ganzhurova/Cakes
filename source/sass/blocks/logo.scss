@@ -5,6 +5,10 @@
   @include playfair-bold;
 }
 
-.logo__dark {
+.logo--dark {
   font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
