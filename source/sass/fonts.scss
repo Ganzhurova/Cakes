@@ -26,3 +26,11 @@
     url("../fonts/playfair/Playfairdisplaybold.ttf") format("truetype");
   font-display: swap;
 }
+
+@font-face {
+  font-weight: normal;
+  font-family: "Intro Script R H2 Base";
+  font-style: normal;
+  src: url("../fonts/introScriptR/IntroScriptR-H2Base.woff") format("woff"),
+    url("../fonts/introScriptR/IntroScriptR-H2Base.ttf") format("truetype");
+}

@@ -1,15 +1,19 @@
 .nav__button {
+  width: 18px;
+  height: 18px;
+  padding: 2px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    height: 22px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
-.nav__burger {
-  margin: 0;
-  padding: 2px;
-}
-
-.nav__burger-line {
+.nav__button-line {
   display: block;
 
   width: 18px;
@@ -105,7 +109,7 @@
 }
 
 .nav--active {
-  .nav__burger {
+  .nav__button {
     position: relative;
 
     width: 18px;
@@ -117,7 +121,7 @@
     }
   }
 
-  .nav__burger-line {
+  .nav__button-line {
     &:nth-child(1),
     &:nth-child(2) {
       position: absolute;

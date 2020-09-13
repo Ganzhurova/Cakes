@@ -6,10 +6,10 @@
 
 @import "blocks/buttons.scss";
 @import "blocks/logo.scss";
-// @import "blocks/user-navigation.scss";
+@import "blocks/hero.scss";
+@import "blocks/features.scss";
 // @import "blocks/user-navigation-index.scss";
 // @import "blocks/overlay.scss";
-// @import "blocks/hero.scss";
 // @import "blocks/social.scss";
 // @import "blocks/social-header.scss";
 // @import "blocks/breadcrumbs.scss";
@@ -19,4 +19,4 @@
 // @import "layout/header-index.scss";
 @import "layout/nav.scss";
 // @import "layout/navigation-index.scss";
-// @import "layout/catalog.scss";
+@import "layout/catalog.scss";

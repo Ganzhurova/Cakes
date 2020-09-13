@@ -1,0 +1,42 @@
+.hero {
+  background-color: $pink;
+  background-image: url("../img/hero/cake-bg-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: top -206px center;
+  background-size: 391px 391px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero/cake-bg-mobile@2x.png");
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 128px;
+  padding-bottom: 48px;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 18px;
+
+  font-size: 40px;
+  line-height: 36px;
+  letter-spacing: 0.075em;
+  text-align: center;
+  @include playfair-bold;
+}
+
+.hero__subtitle {
+  margin-bottom: 22px;
+
+  text-align: center;
+}
+
+.hero__button {
+  order: 1;
+  width: 226px;
+  margin: 0 auto;
+}

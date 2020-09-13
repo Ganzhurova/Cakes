@@ -1,5 +1,5 @@
 .button {
-  display: block;
+  display: inline-block;
 
   padding: 0;
 
@@ -7,4 +7,22 @@
 
   border: 0;
   cursor: pointer;
+}
+
+.button--base {
+  padding: 18.5px 20px;
+
+  color: $white;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $button-color;
+  border-radius: 25.5px;
+}
+
+@media (hover), (min-width: 0\0), (min--moz-device-pixel-ratio: 0) {
+  .button--base:hover {
+    box-shadow: 0 5px 12px rgba(245, 0, 73, 0.3);
+  }
 }

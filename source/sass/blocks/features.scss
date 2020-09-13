@@ -1,0 +1,49 @@
+.features__list {
+  margin: 0;
+  margin-bottom: 42px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features__item--hero {
+  position: relative;
+
+  padding-left: 42px;
+
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 33px;
+    height: 33px;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    content: "";
+  }
+}
+
+.features__item--natural::before {
+  background-image: url("../img/features/natural-icon.svg");
+}
+
+.features__item--delivery::before {
+  height: 32px;
+
+  background-image: url("../img/features/delivery-icon.svg");
+}
+
+.features__desc {
+  margin: 0;
+
+  font-size: 14px;
+}

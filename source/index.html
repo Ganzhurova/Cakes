@@ -25,11 +25,9 @@
 
         <nav class="header__nav nav">
           <button class="nav__button button" type="button">
-            <ul class="nav__burger">
-              <li class="nav__burger-line"></li>
-              <li class="nav__burger-line"></li>
-              <li class="nav__burger-line"></li>
-            </ul>
+            <span class="nav__button-line"></span>
+            <span class="nav__button-line"></span>
+            <span class="nav__button-line"></span>
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="nav__list">
@@ -71,23 +69,72 @@
     </header>
 
     <main class="main">
-      <div class="hero">
-        <div class="hero__wrapper">
+      <section class="hero">
+        <div class="hero__wrapper container">
           <h1 class="hero__title">
-            Торты на заказ
+            Торты<br />
+            на заказ
           </h1>
-          <p class="hero__subtitle">Ручная работа</p>
-          <a class="hero__button button" href="#">Выбрать торт</a>
+          <p class="hero__subtitle subtitle">Ручная работа</p>
+          <a class="hero__button button button--base" href="#">Выбрать торт</a>
+
+          <div class="hero__features features features--hero">
+            <ul class="features__list features__list--hero">
+              <li
+                class="features__item features__item--hero features__item--natural"
+              >
+                <p class="features__desc">
+                  Натуральные ингредиенты
+                </p>
+              </li>
+              <li
+                class="features__item features__item--hero features__item--delivery"
+              >
+                <p class="features__desc">
+                  Доставка бесплатно при заказе от 2000 рублей*
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="hero__features features">
-          <li class="features__item">
-            Натуральные ингредиенты
-          </li>
-          <li class="features__item">
-            Доставка бесплатно при заказе от 2000 рублей*
-          </li>
-        </ul>
-      </div>
+      </section>
+
+      <section class="catalog">
+        <div class="catalog__wrapper container">
+          <h2 class="catalog__title title">Наши торты</h2>
+          <ul class="catalog__list"></ul>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features__wrapper container">
+          <h2 class="features__title title">
+            Наши преимущества
+          </h2>
+          <p class="features__subtitle subtitle">
+            Почему нас выбирают ?
+          </p>
+
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__category-title">
+                Без искусственных добавок
+              </h3>
+              <p class="features__desc">
+                Работаем с натуральными ингредиентами и свежими продуктами
+              </p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__category-title">
+                Свежий торт в день торжества
+              </h3>
+              <p class="features__desc">
+                Торты изготавливаются в течение суток до отправки
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
