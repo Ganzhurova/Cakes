@@ -22,12 +22,20 @@ body {
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/body/cake-bg-tablet@1x.png");
-    background-position: top 73px left calc(50% + 234.5px);
-    background-size: 570px 571px;
+    background-image: url("../img/body/strawberry-half-bg-tablet.png"),
+      url("../img/body/raspberry-bg-tablet.png"),
+      url("../img/body/strawberry-bg-tablet.png"),
+      url("../img/body/cake-bg-tablet@1x.png");
+    background-position: top 90px left calc(50% - 24px),
+      top 310px left calc(50% - 73px), top 458px left calc(50% - 62.5px),
+      top 73px left calc(50% + 234.5px);
+    background-size: 72px 71px, 40px 39px, 99px 71px, 570px 571px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/body/cake-bg-tablet@2x.png");
+      background-image: url("../img/body/strawberry-half-bg-tablet.png"),
+        url("../img/body/raspberry-bg-tablet.png"),
+        url("../img/body/strawberry-bg-tablet.png"),
+        url("../img/body/cake-bg-tablet@2x.png");
     }
   }
 
