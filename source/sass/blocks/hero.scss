@@ -1,13 +1,5 @@
 .hero {
-  background-color: $pink;
-  background-image: url("../img/hero/cake-bg-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: top -206px center;
-  background-size: 391px 391px;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/hero/cake-bg-mobile@2x.png");
-  }
+  background-color: transparent;
 }
 
 .hero__wrapper {
@@ -16,6 +8,16 @@
 
   padding-top: 128px;
   padding-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 103px;
+    padding-bottom: 144px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 138px;
+    padding-bottom: 240px;
+  }
 }
 
 .hero__title {
@@ -27,16 +29,52 @@
   letter-spacing: 0.075em;
   text-align: center;
   @include playfair-bold;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+
+    font-size: 60px;
+    line-height: 55px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 78.31px;
+    line-height: 70px;
+  }
 }
 
 .hero__subtitle {
   margin-bottom: 22px;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+
+    font-size: 36px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+
+    font-size: 40.83px;
+  }
 }
 
 .hero__button {
   order: 1;
   width: 226px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    margin: 0;
+    margin-bottom: 162px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 143px;
+  }
 }
