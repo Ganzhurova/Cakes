@@ -26,6 +26,16 @@
     min-height: 0;
     padding-top: 58px;
   }
+
+  //for ie11
+  &::after {
+    display: block;
+    min-height: inherit;
+
+    font-size: 0;
+
+    content: "";
+  }
 }
 
 .header__logo {
