@@ -19,10 +19,12 @@
 
   background-color: $button-color;
   border-radius: 25.5px;
-}
 
-@media (hover), (min-width: 0\0), (min--moz-device-pixel-ratio: 0) {
-  .button--base:hover {
+  &:hover,
+  &:active,
+  &:focus {
     box-shadow: 0 5px 12px rgba(245, 0, 73, 0.3);
+
+    transition: 0.2s;
   }
 }

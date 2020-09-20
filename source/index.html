@@ -103,90 +103,158 @@
         <div class="promo-catalog__wrapper container">
           <h2 class="promo-catalog__title title">Наши торты</h2>
           <ul class="promo-catalog__list">
-            <li class="promo-catalog__item promo-catalog__item--big">
+            <li
+              class="promo-catalog__item promo-catalog__item--big promo-catalog__item--big-left"
+            >
               <a class="promo-catalog__link" href="#">
-                <h3 class="promo-catalog__category">Классические</h3>
-                <span class="promo-catalog__amount">24 вида</span>
                 <div class="promo-catalog__img-wrapper">
-                  <img
-                    class="promo-catalog__img"
-                    src="img/promo-catalog/classic-mobile@1x.jpg"
-                    alt="Классические торты"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/promo-catalog/classic-tablet@1x.jpg 1x,
+                        img/promo-catalog/classic-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="promo-catalog__img"
+                      src="img/promo-catalog/classic-mobile@1x.jpg"
+                      srcset="img/promo-catalog/classic-mobile@2x.jpg 2x"
+                      alt="Классические торты"
+                    />
+                  </picture>
+                  <div class="promo-catalog__desc">
+                    <h3 class="promo-catalog__category">Классические</h3>
+                    <span class="promo-catalog__amount">24 вида</span>
+                  </div>
                 </div>
-                <span class="promo-catalog__follow">Смотреть</span>
               </a>
             </li>
             <li class="promo-catalog__item">
               <a class="promo-catalog__link" href="#">
-                <h3 class="promo-catalog__category">Муссовые</h3>
-                <span class="promo-catalog__amount">12 видов</span>
                 <div class="promo-catalog__img-wrapper">
-                  <img
-                    class="promo-catalog__img"
-                    src="img/promo-catalog/mousse-mobile@1x.jpg"
-                    alt="Муссовые торты"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/promo-catalog/mousse-tablet@1x.jpg 1x,
+                        img/promo-catalog/mousse-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="promo-catalog__img"
+                      src="img/promo-catalog/mousse-mobile@1x.jpg"
+                      srcset="img/promo-catalog/mousse-mobile@2x.jpg 2x"
+                      alt="Муссовые торты"
+                    />
+                  </picture>
+                  <div class="promo-catalog__desc">
+                    <h3 class="promo-catalog__category">Муссовые</h3>
+                    <span class="promo-catalog__amount">12 видов</span>
+                  </div>
                 </div>
-                <span class="promo-catalog__follow"></span>
               </a>
             </li>
             <li class="promo-catalog__item">
               <a class="promo-catalog__link" href="#">
-                <h3 class="promo-catalog__category">Свадебные</h3>
-                <span class="promo-catalog__amount">20 видов</span>
                 <div class="promo-catalog__img-wrapper">
-                  <img
-                    class="promo-catalog__img"
-                    src="img/promo-catalog/wedding-mobile@1x.jpg"
-                    alt="Свадебные торты"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/promo-catalog/wedding-tablet@1x.jpg 1x,
+                        img/promo-catalog/wedding-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="promo-catalog__img"
+                      src="img/promo-catalog/wedding-mobile@1x.jpg"
+                      srcset="img/promo-catalog/wedding-mobile@2x.jpg 2x"
+                      alt="Свадебные торты"
+                    />
+                  </picture>
+                  <div class="promo-catalog__desc">
+                    <h3 class="promo-catalog__category">Свадебные</h3>
+                    <span class="promo-catalog__amount">20 видов</span>
+                  </div>
                 </div>
-                <span class="promo-catalog__follow"></span>
-              </a>
-            </li>
-            <li class="promo-catalog__item">
-              <a class="promo-catalog__link" href="#">
-                <h3 class="promo-catalog__category">Мужчинам</h3>
-                <span class="promo-catalog__amount">12 видов</span>
-                <div class="promo-catalog__img-wrapper">
-                  <img
-                    class="promo-catalog__img"
-                    src="img/promo-catalog/men-mobile@1x.jpg"
-                    alt="Торты для мужчин"
-                  />
-                </div>
-                <span class="promo-catalog__follow"></span>
-              </a>
-            </li>
-            <li class="promo-catalog__item">
-              <a class="promo-catalog__link" href="#">
-                <h3 class="promo-catalog__category">Женщинам</h3>
-                <span class="promo-catalog__amount">16 видов</span>
-                <div class="promo-catalog__img-wrapper">
-                  <img
-                    class="promo-catalog__img"
-                    src="img/promo-catalog/women-mobile@1x.jpg"
-                    alt="Торты для женщин"
-                  />
-                </div>
-                <span class="promo-catalog__follow"></span>
               </a>
             </li>
             <li
-              class="promo-catalog__item promo-catalog__item--big promo-catalog__item--bg-grey"
+              class="promo-catalog__item promo-catalog__item--big promo-catalog__item--big-right promo-catalog__item--bg-grey"
             >
               <a class="promo-catalog__link" href="#">
-                <h3 class="promo-catalog__category">Детские</h3>
-                <span class="promo-catalog__amount">18 видов</span>
                 <div class="promo-catalog__img-wrapper">
-                  <img
-                    class="promo-catalog__img"
-                    src="img/promo-catalog/baby-mobile@1x.jpg"
-                    alt="Детские торты"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/promo-catalog/baby-tablet@1x.jpg 1x,
+                        img/promo-catalog/baby-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="promo-catalog__img"
+                      src="img/promo-catalog/baby-mobile@1x.jpg"
+                      srcset="img/promo-catalog/baby-mobile@2x.jpg 2x"
+                      alt="Детские торты"
+                    />
+                  </picture>
+                  <div class="promo-catalog__desc">
+                    <h3 class="promo-catalog__category">Детские</h3>
+                    <span class="promo-catalog__amount">18 видов</span>
+                  </div>
                 </div>
-                <span class="promo-catalog__follow"></span>
+              </a>
+            </li>
+            <li class="promo-catalog__item">
+              <a class="promo-catalog__link" href="#">
+                <div class="promo-catalog__img-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/promo-catalog/men-tablet@1x.jpg 1x,
+                        img/promo-catalog/men-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="promo-catalog__img"
+                      src="img/promo-catalog/men-mobile@1x.jpg"
+                      srcset="img/promo-catalog/men-mobile@2x.jpg 2x"
+                      alt="Торты для мужчин"
+                    />
+                  </picture>
+                  <div class="promo-catalog__desc">
+                    <h3 class="promo-catalog__category">Мужчинам</h3>
+                    <span class="promo-catalog__amount">12 видов</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="promo-catalog__item">
+              <a class="promo-catalog__link" href="#">
+                <div class="promo-catalog__img-wrapper">
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/promo-catalog/women-tablet@1x.jpg 1x,
+                        img/promo-catalog/women-tablet@1x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="promo-catalog__img"
+                      src="img/promo-catalog/women-mobile@1x.jpg"
+                      srcset="img/promo-catalog/women-mobile@2x.jpg 2x"
+                      alt="Торты для женщин"
+                    />
+                  </picture>
+                  <div class="promo-catalog__desc">
+                    <h3 class="promo-catalog__category">Женщинам</h3>
+                    <span class="promo-catalog__amount">16 видов</span>
+                  </div>
+                </div>
               </a>
             </li>
           </ul>
