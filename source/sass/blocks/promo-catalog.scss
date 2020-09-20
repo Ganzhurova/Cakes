@@ -14,6 +14,10 @@
 
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .promo-catalog__list {
@@ -32,6 +36,10 @@
     margin: 0 -1.33%;
 
     font-size: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 -20px;
   }
 }
 
@@ -53,6 +61,13 @@
     vertical-align: top;
 
     box-shadow: 0 10px 13px rgba(163, 6, 60, 0.05);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 484px;
+    min-width: 0;
+    height: 305px;
+    margin: 0 20px 42px;
   }
 
   &:nth-child(4) {
@@ -95,6 +110,12 @@
       width: 56%;
       min-width: 419px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 696px;
+      min-width: 0;
+      height: 653px;
+    }
   }
 
   &:hover,
@@ -107,6 +128,12 @@
     }
   }
 
+  &:hover .promo-catalog__icon-arrow {
+    @media (min-width: $desktop-width) {
+      fill: $darkpink;
+    }
+  }
+
   &:hover::before {
     opacity: 0.4;
 
@@ -115,6 +142,53 @@
     @media (min-width: $tablet-width) {
       opacity: 0;
     }
+  }
+}
+
+.promo-catalog__link {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: block;
+  }
+
+  &--flag-look::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      right: 72px;
+      bottom: 20px;
+      z-index: 1;
+
+      display: block;
+
+      color: $text-dark;
+
+      font-size: 11.93px;
+
+      content: "Смотреть";
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 111px;
+      bottom: 35px;
+
+      font-size: 20px;
+    }
+  }
+}
+
+.promo-catalog__icon-arrow {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 70px;
+    bottom: 39px;
+    z-index: 1;
+
+    display: block;
+
+    fill: $black;
   }
 }
 
@@ -145,6 +219,10 @@
   @media (min-width: $tablet-width) {
     top: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 36px;
+  }
 }
 
 .promo-catalog__category {
@@ -161,6 +239,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 47px;
+
     font-size: 24px;
   }
 }
@@ -179,6 +259,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 47px;
+
     font-size: 20px;
   }
 }
