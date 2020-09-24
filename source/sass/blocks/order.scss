@@ -1,0 +1,43 @@
+.order {
+  min-width: 320px;
+
+  background-color: $pink;
+}
+
+.order__title {
+  margin-bottom: 8px;
+
+  text-align: center;
+}
+
+.order__subtitle {
+  margin-bottom: 16px;
+
+  text-align: center;
+}
+
+.order__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.order__item {
+  padding: 8px 7.14% 26px;
+
+  background-color: $white;
+}
+
+.order__item-title {
+  margin: 0 0 17px;
+
+  color: $text-pink;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  @include playfair-bold;
+}
+
+.order__item-number {
+  font-size: 30px;
+}

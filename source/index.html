@@ -13,6 +13,7 @@
       content="Описание сайта содержит не более 150 символов"
     />
     <link href="css/style.css" rel="stylesheet" />
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <svg style="display:none">
@@ -324,6 +325,377 @@
               </a>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="order">
+        <div class="order__wrapper container">
+          <h2 class="order__title title">
+            Индивидуальный заказ
+          </h2>
+          <p class="order__subtitle subtitle">Соберите торт в 3 шага</p>
+
+          <ul class="order__list">
+            <li class="order__item">
+              <h3 class="order__item-title">
+                <span class="order__item-number">01</span>
+                Выберите начинку
+              </h3>
+              <div class="order__filling filling slider">
+                <ul class="filling__list slider__list">
+                  <li class="filling__item slider__item">
+                    <div class="filling__img-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1366px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-desktop@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-desktop@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-tablet@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          class="filling__img"
+                          src="img/order/filling/chocolate-ganache-mobile@1x.jpg"
+                          srcset="
+                            img/order/filling/chocolate-ganache-mobile@2x.jpg 2x
+                          "
+                          alt="Шоколадный ганаш"
+                        />
+                      </picture>
+                    </div>
+                    <div class="filling__characteristic">
+                      <h4 class="filling__title">
+                        Шоколадный ганаш
+                      </h4>
+                      <p class="filling__desc">
+                        Ароматный шоколадный бисквит, густой шоколадный крем –
+                        самый шоколадный из всех возможных десертов!
+                      </p>
+                      <span class="filling__price">1000</span>
+                      <button
+                        class="filling__button button button--base"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </div>
+                  </li>
+                  <li class="filling__item slider__item">
+                    <div class="filling__img-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1366px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-desktop@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-desktop@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-tablet@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          class="filling__img"
+                          src="img/order/filling/chocolate-ganache-mobile@1x.jpg"
+                          srcset="
+                            img/order/filling/chocolate-ganache-mobile@2x.jpg 2x
+                          "
+                          alt="Шоколадный ганаш"
+                        />
+                      </picture>
+                    </div>
+                    <div class="filling__characteristic">
+                      <h4 class="filling__title">
+                        Фисташковый крем
+                      </h4>
+                      <p class="filling__desc">
+                        Ароматный шоколадный бисквит, густой шоколадный крем –
+                        самый шоколадный из всех возможных десертов!
+                      </p>
+                      <span class="filling__price">1000</span>
+                      <button
+                        class="filling__button button button--base"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </div>
+                  </li>
+                  <li class="filling__item slider__item">
+                    <div class="filling__img-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1366px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-desktop@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-desktop@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-tablet@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          class="filling__img"
+                          src="img/order/filling/chocolate-ganache-mobile@1x.jpg"
+                          srcset="
+                            img/order/filling/chocolate-ganache-mobile@2x.jpg 2x
+                          "
+                          alt="Шоколадный ганаш"
+                        />
+                      </picture>
+                    </div>
+                    <div class="filling__characteristic">
+                      <h4 class="filling__title">
+                        Сочная груша
+                      </h4>
+                      <p class="filling__desc">
+                        Ароматный шоколадный бисквит, густой шоколадный крем –
+                        самый шоколадный из всех возможных десертов!
+                      </p>
+                      <span class="filling__price">1000</span>
+                      <button
+                        class="filling__button button button--base"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </div>
+                  </li>
+                  <li class="filling__item slider__item">
+                    <div class="filling__img-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1366px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-desktop@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-desktop@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-tablet@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          class="filling__img"
+                          src="img/order/filling/chocolate-ganache-mobile@1x.jpg"
+                          srcset="
+                            img/order/filling/chocolate-ganache-mobile@2x.jpg 2x
+                          "
+                          alt="Шоколадный ганаш"
+                        />
+                      </picture>
+                    </div>
+                    <div class="filling__characteristic">
+                      <h4 class="filling__title">
+                        Сметанный крем
+                      </h4>
+                      <p class="filling__desc">
+                        Ароматный шоколадный бисквит, густой шоколадный крем –
+                        самый шоколадный из всех возможных десертов!
+                      </p>
+                      <span class="filling__price">1000</span>
+                      <button
+                        class="filling__button button button--base"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </div>
+                  </li>
+                  <li class="filling__item slider__item">
+                    <div class="filling__img-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1366px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-desktop@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-desktop@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-tablet@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          class="filling__img"
+                          src="img/order/filling/chocolate-ganache-mobile@1x.jpg"
+                          srcset="
+                            img/order/filling/chocolate-ganache-mobile@2x.jpg 2x
+                          "
+                          alt="Шоколадный ганаш"
+                        />
+                      </picture>
+                    </div>
+                    <div class="filling__characteristic">
+                      <h4 class="filling__title">
+                        Яблоко
+                      </h4>
+                      <p class="filling__desc">
+                        Ароматный шоколадный бисквит, густой шоколадный крем –
+                        самый шоколадный из всех возможных десертов!
+                      </p>
+                      <span class="filling__price">1000</span>
+                      <button
+                        class="filling__button button button--base"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </div>
+                  </li>
+                  <li class="filling__item slider__item">
+                    <div class="filling__img-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1366px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-desktop@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-desktop@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-tablet@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          class="filling__img"
+                          src="img/order/filling/chocolate-ganache-mobile@1x.jpg"
+                          srcset="
+                            img/order/filling/chocolate-ganache-mobile@2x.jpg 2x
+                          "
+                          alt="Шоколадный ганаш"
+                        />
+                      </picture>
+                    </div>
+                    <div class="filling__characteristic">
+                      <h4 class="filling__title">
+                        Слива
+                      </h4>
+                      <p class="filling__desc">
+                        Ароматный шоколадный бисквит, густой шоколадный крем –
+                        самый шоколадный из всех возможных десертов!
+                      </p>
+                      <span class="filling__price">1000</span>
+                      <button
+                        class="filling__button button button--base"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </div>
+                  </li>
+                  <li class="filling__item slider__item">
+                    <div class="filling__img-wrapper">
+                      <picture>
+                        <source
+                          media="(min-width: 1366px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-desktop@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-desktop@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            img/order/filling/chocolate-ganache-tablet@1x.jpg 1x,
+                            img/order/filling/chocolate-ganache-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          class="filling__img"
+                          src="img/order/filling/chocolate-ganache-mobile@1x.jpg"
+                          srcset="
+                            img/order/filling/chocolate-ganache-mobile@2x.jpg 2x
+                          "
+                          alt="Шоколадный ганаш"
+                        />
+                      </picture>
+                    </div>
+                    <div class="filling__characteristic">
+                      <h4 class="filling__title">
+                        Орехи
+                      </h4>
+                      <p class="filling__desc">
+                        Ароматный шоколадный бисквит, густой шоколадный крем –
+                        самый шоколадный из всех возможных десертов!
+                      </p>
+                      <span class="filling__price">1000</span>
+                      <button
+                        class="filling__button button button--base"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+                <div class="slider__amount slider__amount--light">
+                  <span class="slider__serial">1</span>
+                  <span class="slider__total">12</span>
+                </div>
+                <div class="slider__nav">
+                  <button
+                    class="button slider__button slider__button--prev"
+                    type="button"
+                  >
+                    <span class="visually-hidden">
+                      Предыдущий
+                    </span>
+                  </button>
+                  <button
+                    class="button slider__button slider__button--next"
+                    type="button"
+                  >
+                    <span class="visually-hidden">
+                      Следующий
+                    </span>
+                  </button>
+                </div>
+                <div class="slider__controls">
+                  <a
+                    class="button slider__control slider__control--current"
+                    href="#"
+                  ></a>
+                  <a class="button slider__control" href="#"></a>
+                  <a class="button slider__control" href="#"></a>
+                  <a class="button slider__control" href="#"></a>
+                  <a
+                    class="button slider__control slider__control--continue"
+                    href="#"
+                  ></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <form
+            class="order__form"
+            method="get"
+            action="https://echo.htmlacademy.ru"
+          ></form>
         </div>
       </section>
 
