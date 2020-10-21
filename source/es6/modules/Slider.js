@@ -87,6 +87,28 @@ class Slider {
     this.wrapper.style.transform = `translateX(${this.transform}%)`;
   }
 
+  navigate(direction) {
+    if (direction === "next") {
+      if (this.index === this.total - 1) {
+        return;
+      }
+      this.index += 1;
+      this.transform -= this.step;
+    }
+
+    if (direction === "prev") {
+      if (this.index === 0) {
+        return;
+      }
+      this.index -= 1;
+      this.transform += this.step;
+    }
+
+    this.slideTo(this.index);
+    this.showIndicators(this.index);
+    this.setCurrentIndicator(this.index);
+  }
+
   actions() {
     this.indicatorsWrapper.addEventListener("click", e => {
       if (e.target.className === "slider__indicator") {
@@ -102,32 +124,27 @@ class Slider {
 
     this.buttonNext.addEventListener("click", e => {
       e.preventDefault();
-
-      if (this.index === this.total - 1) {
-        return;
-      }
-
-      this.index += 1;
-      this.transform -= this.step;
-
-      this.slideTo(this.index);
-      this.showIndicators(this.index);
-      this.setCurrentIndicator(this.index);
+      this.navigate("next");
     });
 
     this.buttonPrev.addEventListener("click", e => {
       e.preventDefault();
+      this.navigate("prev");
+    });
 
-      if (this.index === 0) {
-        return;
+    let startX = 0;
+    this.slider.addEventListener("touchstart", e => {
+      startX = e.changedTouches[0].clientX;
+    });
+
+    this.slider.addEventListener("touchend", e => {
+      const endX = e.changedTouches[0].clientX;
+      const deltaX = startX - endX;
+      if (deltaX > 50) {
+        this.navigate("next");
+      } else if (deltaX < -50) {
+        this.navigate("prev");
       }
-
-      this.index -= 1;
-      this.transform += this.step;
-
-      this.slideTo(this.index);
-      this.showIndicators(this.index);
-      this.setCurrentIndicator(this.index);
     });
   }
 }

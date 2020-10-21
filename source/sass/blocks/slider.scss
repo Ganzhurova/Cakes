@@ -39,7 +39,7 @@
 .slider__button {
   position: relative;
 
-  // display: none;
+  display: none;
 
   width: 40px;
   height: 40px;
@@ -47,6 +47,10 @@
   background-color: $white;
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 
   &::before {
     position: absolute;
@@ -92,6 +96,10 @@
   align-items: center;
 
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .slider__indicator {
@@ -105,7 +113,7 @@
     margin-right: 5px;
   }
 
-  &:nth-child(5n):not(:last-child) {
+  &:nth-child(5n):not(:last-child):not(.slider__indicator--current) {
     width: 4px;
     height: 4px;
   }
