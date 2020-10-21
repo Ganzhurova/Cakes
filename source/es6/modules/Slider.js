@@ -18,6 +18,16 @@ class Slider {
     this.actions();
   }
 
+  getSliderAmount() {
+    this.slidersTotal = this.slider.querySelectorAll(".slider__total");
+    this.slidersSerial = this.slider.querySelectorAll(".slider__serial");
+
+    for (let i = 0; i < this.slidersTotal.length; i += 1) {
+      this.slidersTotal[i].textContent = this.total;
+      this.slidersSerial[i].textContent = i + 1;
+    }
+  }
+
   makeIndicator(index) {
     this.indicatorEl = document.createElement("a");
     this.indicatorEl.classList.add("slider__indicator");
@@ -77,6 +87,7 @@ class Slider {
   }
 
   setup() {
+    this.getSliderAmount();
     this.renderIndicators();
     this.showIndicators(this.index);
     this.setCurrentIndicator(this.index);
