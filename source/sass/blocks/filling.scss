@@ -1,8 +1,10 @@
 .filling__item {
   display: flex;
+  flex: 0 0 100%;
   flex-direction: column;
 
   min-width: 240px;
+  max-width: 100%;
   margin: 0 auto;
 
   font-size: 0;
@@ -24,7 +26,14 @@
   image-rendering: crisp-edges;
 }
 
+.filling__characteristic {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .filling__title {
+  flex-grow: 1;
   margin: 0 0 6px;
 
   font-size: 16px;
@@ -34,6 +43,7 @@
 }
 
 .filling__desc {
+  flex-grow: 1;
   margin: 0 0 17px;
 
   font-size: 14px;
