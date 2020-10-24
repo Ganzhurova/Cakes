@@ -14,3 +14,12 @@
 @mixin intro {
   font-family: "Intro Script R H2 Base";
 }
+
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+
+  border: 5px dotted $black;
+
+  border-radius: 50%;
+}

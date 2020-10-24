@@ -13,8 +13,6 @@
 }
 
 .filling__img-wrapper {
-  position: relative;
-
   width: 240px;
   margin: 0 auto 37px;
 
@@ -28,7 +26,7 @@
 
 .filling__amount {
   top: 95px;
-  right: 7px;
+  left: calc(50% + 94px);
 }
 
 .filling__characteristic {
@@ -71,4 +69,8 @@
 .filling__button {
   width: 178.84px;
   margin: 0 auto;
+}
+
+.filling__indicators {
+  top: 124px;
 }

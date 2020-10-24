@@ -11,7 +11,7 @@
 }
 
 .order__subtitle {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 
   text-align: center;
 }
@@ -24,13 +24,14 @@
 }
 
 .order__item {
+  margin-bottom: 10px;
   padding: 8px 7.14% 26px;
 
   background-color: $white;
 }
 
 .order__item-title {
-  margin: 0 0 17px;
+  margin: 0 0 15px;
 
   color: $text-pink;
   font-size: 16px;

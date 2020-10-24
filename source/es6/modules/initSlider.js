@@ -1,9 +1,14 @@
 import Slider from "./Slider";
 
-function initSlider() {
-  const slider = new Slider();
-  slider.init(".slider");
-  console.log(slider);
+function initSliders() {
+  const sliders = document.querySelectorAll(".slider");
+
+  for (let i = 0; i < sliders.length; i += 1) {
+    const sliderEl = sliders[i];
+    const slider = new Slider();
+    slider.init(sliderEl);
+    console.log(slider);
+  }
 }
 
-export default initSlider;
+export default initSliders;

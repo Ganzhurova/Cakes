@@ -1,6 +1,6 @@
 class Slider {
-  init(selector) {
-    this.slider = document.querySelector(selector);
+  init(element) {
+    this.slider = element;
     this.wrapper = this.slider.querySelector(".slider__list");
     this.slides = this.slider.querySelectorAll(".slider__item");
     this.buttonPrev = this.slider.querySelector(".slider__button--prev");
@@ -8,6 +8,7 @@ class Slider {
 
     this.index = 0;
     this.total = this.slides.length;
+    this.slideWidth = parseFloat(getComputedStyle(this.slides[0]).width);
     this.transform = 0;
     this.step = 100;
 
@@ -18,14 +19,21 @@ class Slider {
     this.actions();
   }
 
-  getSliderAmount() {
-    this.slidersTotal = this.slider.querySelectorAll(".slider__total");
-    this.slidersSerial = this.slider.querySelectorAll(".slider__serial");
+  getSlidesAmount() {
+    const slidesAmount = this.slider.querySelector(".slider__amount");
 
-    for (let i = 0; i < this.slidersTotal.length; i += 1) {
-      this.slidersTotal[i].textContent = this.total;
-      this.slidersSerial[i].textContent = i + 1;
+    if (!slidesAmount) {
+      return;
     }
+
+    this.slidesTotal = this.slider.querySelector(".slider__total");
+    this.slideSerial = this.slider.querySelectorAll(".slider__serial");
+
+    this.slidesTotal.textContent = this.total;
+
+    // for (let i = 0; i < this.slidersTotal.length; i += 1) {
+    //   this.slidersSerial[i].textContent = i + 1;
+    // }
   }
 
   makeIndicator(index) {
@@ -87,7 +95,7 @@ class Slider {
   }
 
   setup() {
-    this.getSliderAmount();
+    this.getSlidesAmount();
     this.renderIndicators();
     this.showIndicators(this.index);
     this.setCurrentIndicator(this.index);
