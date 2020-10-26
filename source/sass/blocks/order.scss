@@ -24,10 +24,13 @@
 }
 
 .order__item {
-  margin-bottom: 10px;
   padding: 8px 7.14% 26px;
 
   background-color: $white;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .order__item-title {

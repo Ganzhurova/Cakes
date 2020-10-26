@@ -23,3 +23,9 @@
 
   border-radius: 50%;
 }
+
+@mixin price {
+  &::after {
+    content: " руб/кг";
+  }
+}

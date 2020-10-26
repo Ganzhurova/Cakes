@@ -60,10 +60,7 @@
   text-align: center;
 
   @include playfair-bold;
-
-  &::after {
-    content: " руб/кг";
-  }
+  @include price;
 }
 
 .filling__button {

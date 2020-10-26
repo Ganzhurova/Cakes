@@ -1,3 +1,5 @@
+import throttle from "./throttle";
+
 class Slider {
   init(element) {
     this.slider = element;
@@ -8,9 +10,9 @@ class Slider {
 
     this.index = 0;
     this.total = this.slides.length;
-    this.slideWidth = parseFloat(getComputedStyle(this.slides[0]).width);
     this.transform = 0;
     this.step = 100;
+    this.visibleSlidesNumber = 1;
 
     this.indicatorsWrapper = this.slider.querySelector(".slider__indicators");
     this.numberIndicators = 5;
@@ -128,7 +130,37 @@ class Slider {
     this.setCurrentIndicator(this.index);
   }
 
+  getVisibleSlidesNumber() {
+    this.slideWidth = parseFloat(getComputedStyle(this.slides[0]).width);
+    this.widthWrapper = parseFloat(getComputedStyle(this.wrapper).width);
+    const slidesNumber = Math.floor(this.widthWrapper / this.slideWidth);
+    this.visibleSlidesNumber = slidesNumber;
+  }
+
+  addMargins() {
+    const marginsNumber = 2;
+    const freeSpace =
+      this.widthWrapper - this.slideWidth * this.visibleSlidesNumber;
+    const freeSpacefForOne = freeSpace / this.visibleSlidesNumber;
+    const marginWidth = freeSpacefForOne / marginsNumber;
+    const marginStyle = `${marginWidth}px`;
+
+    for (let i = 0; i < this.slides.length; i += 1) {
+      const slide = this.slides[i];
+      slide.style.marginLeft = marginStyle;
+      slide.style.marginRight = marginStyle;
+    }
+  }
+
   actions() {
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        this.getVisibleSlidesNumber();
+        this.addMargins();
+      }, 1000)
+    );
+
     this.indicatorsWrapper.addEventListener("click", e => {
       if (e.target.className === "slider__indicator") {
         e.preventDefault();
